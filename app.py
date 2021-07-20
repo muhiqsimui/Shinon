@@ -25,11 +25,6 @@ def home():
 def webhook():
     req = request.get_json(force=True)
     print(req)
-    url = r.get(
-        'https://raw.githubusercontent.com/muhiqsimui/PyTraining/fun/dataLine.json')
-    data = url.json()
-
-    balasan = str(data['pesan'])
 
     query_result = req.get('queryResult')
     output = str(query_result['queryText'][5:])
