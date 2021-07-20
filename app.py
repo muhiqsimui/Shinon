@@ -33,10 +33,10 @@ def webhook():
 
     query_result = req.get('queryResult')
     output = str(query_result['queryText'][5:])
-
-    return {
-        'fulfillmentText': 'Selamat hari raya ✨Idul Adha🌙 '+output+' H. Mohon maaf lahir dan batin 🙏 '
-    }
+    if query_result['queryText'][:4]=='eidx':
+        return {
+            'fulfillmentText': 'Selamat hari raya ✨Idul Adha🌙 '+output+' H. Mohon maaf lahir dan batin 🙏 '
+        }
 
 
 if __name__ == "__main__":
