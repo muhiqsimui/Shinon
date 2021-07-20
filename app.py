@@ -35,7 +35,7 @@ def webhook():
     output = str(query_result['queryText'][5:])
 
     return {
-        'fulfillmentText': 'Selamat hari raya idul adha tahun '+output+' Hijriah'
+        'fulfillmentText': 'Selamat hari raya ✨Idul Adha🌙 '+output+' H. Mohon maaf lahir dan batin 🙏 '
     }
 
 
