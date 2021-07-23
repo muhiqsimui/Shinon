@@ -1,4 +1,4 @@
-# Shinon Bot
+# Shinonia Bot
 
 Bot line mengucapkan selamat hari raya idul adha ok sip
 
